@@ -7,33 +7,28 @@
 <body>
     <form action="" method="POST"> 
         <fieldset>
-            <legend><h4>Reach Out To Us</h4></legend>
+            <legend><h4>SEND US NEWS</h4></legend>
+            <!-- This is for the user details-->
             <label for="firstname">First name:</label>
             <input type="text" id="firstname" name="firstname"><br><br>
             <label for="lastname">Last name:</label>
             <input type="text" id="lastname" name="lastname"><br><br>
             <label for="email">Enter your email:</label>
-            <input type="email" id="email" name="email"><br><br>
-            <label for="Gender">Gender:</label><br>
-            <input type="radio" id="male" name="gender" value="male">
-            <label for="male">Male</label><br>
-            <input type="radio" id="female" name="gender" value="female">
-            <label for="female">Female</label><br>
-            <input type="radio" id="other" name="gender" value="other">
-            <label for="other">Other</label><br><br><br>
+            <input type="email" id="email" name="email" placeholder="Enter your email"><br><br>
 
+            <!-- This is for the news title-->
+            <label>News Title:</label><br>
+            <textarea rows= "2" cols = "50" name = "message"> </textarea><br><br>
 
-            <label>Region:</label>
-            <input list="country-list" id="Region" name="country-list"/>
-            <datalist id="country-list">
-                <option value="West Africa"/>
-                <option value="East Africa"/>
-                <option value="North Africa"/>
-                <option value="South Africa"/>
-            </datalist><br><br>
+            <!-- This is for the news body-->
+            <label>News Body:</label><br>
+            <textarea rows= "10" cols = "50" name = "message"> </textarea><br><br>
 
-            <label>Leave us a message:</label><br>
-            <textarea rows= "10" cols = "50" name = "message"> </textarea>
+            <!-- This is for the image upload-->
+            <label for="file"> Upload an image:</label>
+            <input type="file" name="file" id="file"><br><br>
+
+            <!-- This is for the submit button to post the news-->
             <input type="Submit" value="Submit">
         </fieldset>
     </form>
